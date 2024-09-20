@@ -216,9 +216,7 @@ mark{
 }
 
 .card-wrapper {
-    width: 1278.55px;
-    margin: 0 60px 35px;
-    padding: 20px 10px;
+    max-width: 1278.55px;
     overflow: hidden;
 }
 
