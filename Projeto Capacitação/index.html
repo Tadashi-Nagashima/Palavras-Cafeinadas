@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Palavras Cafeinadas</title>
 </head>
 
@@ -11,13 +12,13 @@
         <header>
             <nav>   
                 <ul class="navItens">
-                    <l1><a href="">Sobre nós</a><hr class="navItensSub"></l1>
-                    <l1><a href="">Cafeteria</a><hr class="navItensSub"></l1>
+                    <l1><a href="#sobre-nos">Sobre nós</a><hr class="navItensSub"></l1>
+                    <l1><a href="#cafeteria">Cafeteria</a><hr class="navItensSub"></l1>
                     <div>
                         <img class="navImg" src="assets/coffee_shop_logo-removebg-preview_1-removebg-preview.png" alt="">
                         <p class="navImgTitle">Palavras Cafeinadas</p>
                     </div>
-                    <l1><a href="">Contato</a><hr class="navItensSub"></l1>
+                    <l1><a href="#contato">Contato</a><hr class="navItensSub"></l1>
                     <l1><img class= "icon" src="assets/images.png" alt="">19-991256972</l1>
                 </ul>
             </nav>
@@ -37,7 +38,7 @@
                     </strong>
                 </button>
             </div>
-            <section>
+            <section id="sobre-nos">
                 <h2>
                     <mark>Sobre nós</mark>
                 </h2>
@@ -59,60 +60,62 @@
                 </div>
             </section>
             <img style="width: 1440px; height: 199.08px; display: flex;" src="assets/Cafe_onda-removebg-preview.png" alt="">
-            <section id="cafeteria">
+            <section class="cafeteria" id="cafeteria">
                 <h2 id="texto-cafeteria">Cafeteria</h2>
-                <div id="div-carrossel">
-                    <div class="buttonPrev"><</div>
-                    <ul id="ul-carrossel">
-                        <div class="carrossel">
-                            <li>
-                                <img class="imgCarrossel" src="assets/Brigadeiro 1.jpg" alt=""> 
-                                <h2 class="tituloCarrossel">
-                                    Brigadeiro De Capuccino
-                                </h2>
-                                <p class="textoCarrossel">
-                                    O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...
-                                </p>
-                            </li>
-                        </div>
-                        <div class="carrossel">
-                            <li>
-                                <img class="imgCarrossel" src="assets/chocolate cake 1.jpg" alt=""> 
-                                <h2 class="tituloCarrossel">
-                                Bolo de Chocolate
-                                </h2>
-                                <p class="textoCarrossel">
-                                    O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...
-                                </p>
-                            </li>
-                        </div>
-                        <div class="carrossel">
-                            <li>
-                                <img class="imgCarrossel" src="assets/ginger bread 1.jpg" alt=""> 
-                                <h2 class="tituloCarrossel">
-                                    Pão de Mel
-                                </h2>
-                                <p class="textoCarrossel">
-                                    O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...
-                                </p>
-                            </li>   
-                        </div>
-                        <!-- <div class="carrossel">
-                            <li>
-                                <img class="imgCarrossel" src="assets/sorvete cafe 1.jpg" alt=""> 
-                                <h2 class="tituloCarrossel">
-                                    Sorvete de Café
-                                </h2>
-                                <p class="textoCarrossel">
-                                    O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...
-                                </p>
-                            </li>   
-                        </div> -->
-                    </ul>
-                    <div class="buttonNext">></div>
-                </div>
+                <div class="swiper">
+                    <div class="wrapper">
+                        <ul class="ul-carrossel swiper-wrapper">
+                            <a class="link-carrossel">
+                                <li class="carrossel swiper-slide">
+                                    <img class="imgCarrossel" src="assets/Brigadeiro 1.jpg" alt=""> 
+                                    <h2 class="tituloCarrossel">
+                                        Brigadeiro De Capuccino
+                                    </h2>
+                                    <p class="textoCarrossel">
+                                        O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...
+                                    </p>
+                                </li>
+                            </a>
+                            <a class="link-carrossel">
+                                <li class="carrossel swiper-slide">
+                                    <img class="imgCarrossel" src="assets/chocolate cake 1.jpg" alt=""> 
+                                    <h2 class="tituloCarrossel">
+                                    Bolo de Chocolate
+                                    </h2>
+                                    <p class="textoCarrossel">
+                                        O bolo de chocolate é uma das sobremesas mais pedidas da Cafeteira, ele possui um recheio com...
+                                    </p>
+                                </li>
+                            </a>
+                            <a class="link-carrossel">
+                                <li class="carrossel swiper-slide">
+                                    <img class="imgCarrossel" src="assets/ginger bread 1.jpg" alt=""> 
+                                    <h2 class="tituloCarrossel">
+                                        Pão de Mel
+                                    </h2>
+                                    <p class="textoCarrossel">
+                                        O pão de mel é um dos doces mais tradicionais que temos, ele é recheado com doce de leite...
+                                    </p>
+                                </li>   
+                            </a>
+                            <a class="link-carrossel">
+                                <li class="carrossel swiper-slide">
+                                    <img class="imgCarrossel" src="assets/sorvete cafe 1.jpg" alt=""> 
+                                    <h2 class="tituloCarrossel">
+                                        Sorvete de Café
+                                    </h2>
+                                    <p class="textoCarrossel">
+                                        O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...
+                                    </p>
+                                </li>   
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="swiper-button-prev" style="color: white;"></div>
+                    <div class="swiper-button-next" style="color: white;"></div>
+                </div>       
             </section>
-            <section>
+            <section id="contato">
                 <div>
                     <h2 class="h2">
                         <mark>Entre em contato</mark>
@@ -186,5 +189,7 @@
                 <p class="textoFooter">Todos os direitos reservados ©</p>
             </footer>
         </main>
+        <script src="app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     </body>
 </html>
