@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Palavras Cafeinadas</title>
 </head>
-
     <body>
         <header>
             <nav>   
@@ -62,10 +60,11 @@
             <img style="width: 1440px; height: 199.08px; display: flex;" src="assets/Cafe_onda-removebg-preview.png" alt="">
             <section class="cafeteria" id="cafeteria">
                 <h2 id="texto-cafeteria">cafeteria</h2>
-                <div class="formato-carrossel swiper">
-                    <div class="card-wrapper">
-                        <ul class="ul-carrossel swiper-wrapper">
-                            <li class="carrossel swiper-slide">
+                <div class="formato-carrossel">
+                    <img id="botaoPrev" src="assets/Flecha anterior.png" onclick="botaoprev()">
+                    <div>
+                        <ul class="ul-carrossel">
+                            <li class="carrossel">
                                 <a class="link-carrossel">
                                     <img class="imgCarrossel" src="assets/Brigadeiro 1.jpg" alt=""> 
                                     <h2 class="tituloCarrossel">
@@ -75,8 +74,8 @@
                                         O brigadeiro de cappuccino é uma das guloseimas que enfeitam o balcão da doceria...
                                     </p>
                                 </a>
-                            </li>
-                            <li class="carrossel swiper-slide">
+                            </li>   
+                            <li class="carrossel">
                                 <a class="link-carrossel">
                                     <img class="imgCarrossel" src="assets/chocolate cake 1.jpg" alt=""> 
                                     <h2 class="tituloCarrossel">
@@ -87,7 +86,7 @@
                                     </p>
                                 </a>
                             </li>
-                            <li class="carrossel swiper-slide">
+                            <li class="carrossel">
                                 <a class="link-carrossel">
                                     <img class="imgCarrossel" src="assets/ginger bread 1.jpg" alt=""> 
                                     <h2 class="tituloCarrossel">
@@ -98,21 +97,9 @@
                                     </p>
                                 </a>
                             </li>
-                            <li class="carrossel swiper-slide">
-                                <a class="link-carrossel">
-                                    <img class="imgCarrossel" src="assets/sorvete cafe 1.jpg" alt=""> 
-                                    <h2 class="tituloCarrossel">
-                                        Sorvete de Café
-                                    </h2>
-                                    <p class="textoCarrossel">
-                                        O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...
-                                    </p>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="swiper-button-prev" style="color: white;"></div>
-                        <div class="swiper-button-next" style="color: white;"></div>
+                        </ul> 
                     </div>
+                    <img id="botaoNext" src="assets/Flecha anterior.png" onclick="botaonext()">
                 </div>      
             </section>
             <section id="contato">
@@ -189,7 +176,6 @@
                 <p class="textoFooter">Todos os direitos reservados ©</p>
             </footer>
         </main>
-        <script src="script.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js" defer></script>
     </body>
 </html>

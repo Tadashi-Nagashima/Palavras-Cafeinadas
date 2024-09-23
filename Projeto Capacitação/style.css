@@ -215,21 +215,29 @@ mark{
     text-underline-offset: 10px;
 }
 
-.card-wrapper {
-    max-width: 1278.55px;
-    overflow: hidden;
-}
-
 .formato-carrossel{
+    width: 1083px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 45px
+    flex-direction: row;
+    margin-top: 45px;
 }
 
-.ul-carrossel .carrossel .link-carrossel{
+.ul-carrossel{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.card-wrapper {
+    width: 1278.55px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.ul-carrossel .carrossel{
     user-select: none;
-    display: block;
     background-color: rgb(255, 255, 255);
     width: 345px;
     height: 400px;
@@ -239,11 +247,7 @@ mark{
     text-decoration: none;
 }
 
-.ul-carrossel .carrossel{
-    list-style: none;
-}
-
-.ul-carrossel .link-carrossel .tituloCarrossel {
+.ul-carrossel .link-carrossel .tituloCarrossel{
     font-family: "Open Sans", sans-serif;
     color: black;
     font-size: 16px;
@@ -253,17 +257,32 @@ mark{
     text-transform: capitalize;
 }
 
+
 .ul-carrossel .link-carrossel .textoCarrossel{
     margin-top: 5px;
     color: black;
 }
 
-.ul-carrossel .link-carrossel .imgCarrossel {
+.link-carrossel .imgCarrossel {
     width: 314px;
     height: 277px;
     object-fit: cover;
 }
 
+#botaoNext{
+    color: white;
+    width: 16.55px;
+    height: 32px;
+    transform: rotate(180deg);
+    margin-left: 50px;
+}
+
+#botaoPrev{
+    color: white;
+    width: 16.55px;
+    height: 32px;
+    margin-right: 50px;
+}
 
 .backgroundContato{
     background-color: #ffffff;
