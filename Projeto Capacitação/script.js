@@ -21,110 +21,79 @@ let itens_cafeteria = [
   }
 ];
 
-function botaonext(){
-  let figura = document.getElementsByClassName("imgCarrossel");
-  let titulo = document.getElementsByClassName("tituloCarrossel");
-  let texto = document.getElementsByClassName("textoCarrossel");
+let figura = document.getElementsByClassName("imgCarrossel");
+let titulo = document.getElementsByClassName("tituloCarrossel");
+let texto = document.getElementsByClassName("textoCarrossel");
 
-  let indice = 0;
+let indice = 0;
 
-  if (document.getElementById("botaoPrev")){
-    for (let i = 0; i < 3; i++){
-      indice = i - 1;
+botaoNext.addEventListener('click', () =>{
+  for (let i = 0; i < 3; i++){
+    indice = i - 1;
 
-      if (indice < 0){
-        indice = 3;
-      }
-       
-      figura[i].src = itens_cafeteria[indice].img;
-      titulo[i].innerHTML = itens_cafeteria[indice].titulo;
-      texto[i].innerHTML = itens_cafeteria[indice].texto;
+    if (indice < 0){
+      indice = 3;
+    }
+     
+    figura[i].src = itens_cafeteria[indice].img;
+    titulo[i].innerHTML = itens_cafeteria[indice].titulo;
+    texto[i].innerHTML = itens_cafeteria[indice].texto;
+  }
+  
+  for (i = 3; i > 0; i--){
+    indice = i + 1
+
+    if (indice > 3){
+      indice = 0;
     }
     
-    for (i = 3; i > 0; i--){
-      indice = i + 1
+    let aux = itens_cafeteria[indice].img;
+    itens_cafeteria[indice].img = itens_cafeteria[i].img;
+    itens_cafeteria[i].img = aux;
 
-      if (indice > 3){
-        indice = 0;
-      }
+    aux = itens_cafeteria[indice].titulo;
+    itens_cafeteria[indice].titulo = itens_cafeteria[i].titulo;
+    itens_cafeteria[i].titulo = titulo;
 
-      let aux = itens_cafeteria[indice].img;
-      itens_cafeteria[indice].img = itens_cafeteria[i].img;
-      itens_cafeteria[i].img = aux;
-
-      aux = itens_cafeteria[indice].titulo;
-      itens_cafeteria[indice].titulo = itens_cafeteria[i].titulo;
-      itens_cafeteria[i].titulo = titulo;
-
-      aux = itens_cafeteria[indice].texto;
-      itens_cafeteria[indice].texto = itens_cafeteria[i].texto;
-      itens_cafeteria[i].texto = aux;
-    }
+    aux = itens_cafeteria[indice].texto;
+    itens_cafeteria[indice].texto = itens_cafeteria[i].texto;
+    itens_cafeteria[i].texto = aux;
   }
-};
 
-function botaoprev(){
-  let figura = document.getElementsByClassName("imgCarrossel");
-  let titulo = document.getElementsByClassName("tituloCarrossel");
-  let texto = document.getElementsByClassName("textoCarrossel");
+  console.log(titulo)
+  console.log(itens_cafeteria)
+})
 
-  let indice = 0;
+botaoPrev.addEventListener('click', () =>{
+  for (let i = 0; i < 3; i++){
+    indice = i + 1;
 
-  if (document.getElementById("botaoPrev")){
-    for (let i = 0; i < 3; i++){
-      indice = i + 1;
-
-      if (indice > 3){
-        indice = 0;
-      }
-       
-      figura[i].src = itens_cafeteria[indice].img;
-      titulo[i].innerHTML = itens_cafeteria[indice].titulo;
-      texto[i].innerHTML = itens_cafeteria[indice].texto;
+    if (indice > 3){
+      indice = 0;
     }
-    
-    for (i = 0; i < 3; i++){
-      indice = i + 1
-
-      if (indice > 3){
-        indice = 0;
-      }
-
-      let aux = itens_cafeteria[indice].img;
-      itens_cafeteria[indice].img = itens_cafeteria[i].img;
-      itens_cafeteria[i].img = aux;
-
-      aux = itens_cafeteria[indice].titulo;
-      itens_cafeteria[indice].titulo = itens_cafeteria[i].titulo;
-      itens_cafeteria[i].titulo = titulo;
-
-      aux = itens_cafeteria[indice].texto;
-      itens_cafeteria[indice].texto = itens_cafeteria[i].texto;
-      itens_cafeteria[i].texto = aux;
-    }
+     
+    figura[i].src = itens_cafeteria[indice].img;
+    titulo[i].innerHTML = itens_cafeteria[indice].titulo;
+    texto[i].innerHTML = itens_cafeteria[indice].texto;
   }
-};
+  
+  for (i = 0; i < 3; i++){
+    indice = i + 1
 
-// let indiceAtual = 0;
+    if (indice > 3){
+      indice = 0;
+    }
 
-// function botaonext() {
-//   const figura = document.getElementsByClassName("imgCarrossel");
-//   const titulo = document.getElementsByClassName("tituloCarrossel");
-//   const texto = document.getElementsByClassName("textoCarrossel");
-//   const totalItens = itens_cafeteria.length;
+    let aux = itens_cafeteria[indice].img;
+    itens_cafeteria[indice].img = itens_cafeteria[i].img;
+    itens_cafeteria[i].img = aux;
 
-//   // Incrementa o índice atual (com rolagem circular)
-//   indiceAtual = (indiceAtual + 1) % totalItens;
+    aux = itens_cafeteria[indice].titulo;
+    itens_cafeteria[indice].titulo = itens_cafeteria[i].titulo;
+    itens_cafeteria[i].titulo = titulo;
 
-//   figura[0].src = itens_cafeteria[indiceAtual].img;
-//   titulo[0].innerHTML = itens_cafeteria[indiceAtual].titulo;
-//   texto[0].innerHTML = itens_cafeteria[indiceAtual].texto;
-
-//   figura[1].src = itens_cafeteria[indiceAtual].img;
-//   titulo[1].innerHTML = itens_cafeteria[indiceAtual].titulo;
-//   texto[1].innerHTML = itens_cafeteria[indiceAtual].texto;
-
-//   figura[2].src = itens_cafeteria[indiceAtual].img;
-//   titulo[2].innerHTML = itens_cafeteria[indiceAtual].titulo;
-//   texto[2].innerHTML = itens_cafeteria[indiceAtual].texto;
-// }
+    aux = itens_cafeteria[indice].texto;
+    itens_cafeteria[indice].texto = itens_cafeteria[i].texto;
+    itens_cafeteria[i].texto = aux;
+  }
+})
