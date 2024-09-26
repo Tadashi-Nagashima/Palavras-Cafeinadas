@@ -120,6 +120,24 @@ h1{
     margin-bottom: 30px;
 }
 
+.buttonVC{
+    width: 283px;
+    height: 57px;
+    border-radius: 8px;
+    background-color: #8F542E;
+    color: white;
+    font-weight: 800;
+    font-size: 18px;
+    text-transform: uppercase;
+    
+    box-shadow: none;
+    transition: none;
+    
+    display: flex;
+    align-items: center;
+    margin-left: 119px;
+}
+
 .button{
     width: 283px;
     height: 57px;
@@ -193,6 +211,12 @@ mark{
     width: 352px; 
     height: 340.41px; 
     border-radius: 8px; 
+}
+
+.ondaCafe{
+    width: 1440px; 
+    height: 199.08px; 
+    display: flex;
 }
 
 .cafeteria{
@@ -286,7 +310,7 @@ mark{
 }
 
 .backgroundContato{
-    background-color: #ffffff;
+    background-color: #F5F3ED;
     width: 1200px;
     height: 711px;
     border-radius: 8px;
@@ -451,8 +475,8 @@ footer{
         padding: 0;
         box-sizing: border-box;
     }
+    
     main{
-        background-color: rgb(255, 255, 255);
         width: 100%;
         height: 100%;
     }
@@ -464,6 +488,8 @@ footer{
     nav{
         width: 100%;
         height: 64px;
+        padding-right: 40px;
+        padding-left: 20px;
     }
    
     .navItens{
@@ -496,11 +522,18 @@ footer{
         font-weight: lighter;
         margin-bottom: 0;
     }
+
+    section h2{
+        font-family: "Cormorant Garamond", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
     .backgroundHeader{
         margin-top: 64px;
         padding-top: 10px;
-    
-        color: #FFFFFF;
+
         height: 241.34px;
         width: 100%;
         max-width: 100%;
@@ -518,20 +551,198 @@ footer{
     }
     
     .button{
-        width: 283px;
-        height: 57px;
-        border-radius: 8px;
-        background-color: #8F542E;
-        color: white;
+        width: 217px;
+        height: 44px;
         font-weight: 800;
-        font-size: 18px;
-        text-transform: uppercase;
-        
-        box-shadow: none;
-        transition: none;
-        
-        display: flex;
-        align-items: center;
+        font-size: 14px;
+
+        padding-left: 10px;
+    }   
+    
+    .buttonVC{
+        width: 217px;
+        height: 44px;
+        font-weight: 800;
+        font-size: 14px;
+
+        margin-left: 30px;
+        margin-top: 35px;
+
+        padding-left: 10px;
+    }
+
+    .seta{
+        width: 21.83px;
+        height: 13px;
+        margin-top: center;
+        margin-bottom: -2px;
+        margin-left: 15px;
+    }
+
+    #formato-sobre{
+        /* background-color: antiquewhite; */
+        width: 100%;
+        margin-bottom: 100px;
     }
     
+    #div-texto-sobre{
+        /* background-color: brown; */
+        margin-top: 1px;
+        margin-left: 45px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    
+    mark{
+        margin-top: 55px;
+        margin-bottom: 15px;
+        margin-left: 45px;
+        width: fit-content;
+        height: 14px;
+    }
+    
+    .textoSobre{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 339px;
+        height: auto;
+        font-weight: 400;
+        font-size: 18px;
+    }
+    
+    #img_cafes{
+        display: none;
+    }
+    
+    .ondaCafe{
+        width: 100%;
+        height: 118px;
+        object-fit: cover;
+        object-position: 30%; 
+    }
+
+    .cafeteria{
+        width: 100%;
+        height: 590.95px;
+    }
+    
+    .formato-carrossel{
+        width: 217px;
+        display: none;
+    }
+    
+    .ul-carrossel{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    
+    .card-wrapper {
+        width: 316.45px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .ul-carrossel .carrossel{
+        width: 217px;
+        height: 287px;
+        margin-bottom: 32px;
+    }
+    
+    .ul-carrossel .link-carrossel .tituloCarrossel{
+        line-height: 27px;
+    }
+    
+    
+    .ul-carrossel .link-carrossel .textoCarrossel{
+        margin-top: -5px;
+        color: black;
+        height: 55px;
+        font-size: 13px;
+    }
+    
+    .link-carrossel .imgCarrossel {
+        width: 197.5px;
+        height: 170.77px;
+    }
+    
+    #botaoNext{
+        width: 13.45px;
+        height: 26px;
+    }
+    
+    #botaoPrev{
+        width: 13.45px;
+        height: 26px;
+    }
+
+    #contato-texto{
+        display: none;
+    }
+
+    .backgroundContato{
+        background-color: #F5F3ED;
+        width: 341px;
+        height: 542px;
+        
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 150px;
+    }
+
+    h3{
+        width: 112px;
+        height: 30px;
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 10px;
+        padding-left: 30px;
+    }
+    
+    .input-nome-email{
+        width: 293px;
+        height: 48px;
+        margin-top: 45px;
+        margin-left: -85px;
+    }
+    
+    #input-mensagem{
+        width: 293px;
+        height: 160px;
+        margin-top: 45px;
+        margin-left: -85px;
+    }
+    
+    #enviar-mensagem{
+        width: 341px;
+        height: 542px;
+        padding-top: 20px;
+    }
+    
+    .item-mensagem{
+        width: 609px;
+        height: auto;
+    }
+    
+    #pos-button-mensagem{
+        padding-top: 40px;
+        padding-left: 30px;
+    }
+
+    footer{
+        background-color: #57290B;
+        width: 100%;
+        height: 75px;
+    
+        display: block;
+        justify-content: center;
+        gap: 0px;
+
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
 }
