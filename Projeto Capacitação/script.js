@@ -36,7 +36,7 @@ botaoNext.addEventListener('click', () =>{
     }
      
     figura[i].src = itens_cafeteria[indice].img;
-    titulo[i].innerHTML = itens_cafeteria[indice].titulo;
+    titulo[i].innerText = itens_cafeteria[indice].titulo;
     texto[i].innerHTML = itens_cafeteria[indice].texto;
   }
   
@@ -53,12 +53,15 @@ botaoNext.addEventListener('click', () =>{
 
     aux = itens_cafeteria[indice].titulo;
     itens_cafeteria[indice].titulo = itens_cafeteria[i].titulo;
-    itens_cafeteria[i].titulo = titulo;
+    itens_cafeteria[i].titulo = aux;
 
     aux = itens_cafeteria[indice].texto;
     itens_cafeteria[indice].texto = itens_cafeteria[i].texto;
     itens_cafeteria[i].texto = aux;
   }
+
+  console.log(titulo)
+  console.log(itens_cafeteria)
 })
 
 botaoPrev.addEventListener('click', () =>{
@@ -87,7 +90,7 @@ botaoPrev.addEventListener('click', () =>{
 
     aux = itens_cafeteria[indice].titulo;
     itens_cafeteria[indice].titulo = itens_cafeteria[i].titulo;
-    itens_cafeteria[i].titulo = titulo;
+    itens_cafeteria[i].titulo = aux;
 
     aux = itens_cafeteria[indice].texto;
     itens_cafeteria[indice].texto = itens_cafeteria[i].texto;
