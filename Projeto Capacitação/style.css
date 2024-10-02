@@ -254,12 +254,6 @@ mark{
     flex-direction: row;
     gap: 10px;
 }
-.card-wrapper {
-    width: 1278.55px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-}
 
 .ul-carrossel .carrossel{
     user-select: none;
@@ -292,6 +286,14 @@ mark{
     width: 314px;
     height: 277px;
     object-fit: cover;
+}
+.carrossel {
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel.active {
+    display: block;
+    transform: translateX(0);
 }
 
 #botaoNext{
@@ -637,20 +639,13 @@ footer{
     
     .formato-carrossel{
         width: 217px;
-        display: none;
+        /* display: none; */
     }
     
     .ul-carrossel{
         display: flex;
         flex-direction: row;
         gap: 10px;
-    }
-    
-    .card-wrapper {
-        width: 316.45px;
-        overflow: hidden;
-        display: flex;
-        flex-direction: row;
     }
     
     .ul-carrossel .carrossel{
@@ -689,6 +684,7 @@ footer{
     #contato-texto{
         display: none;
     }
+
     .backgroundContato{
         background-color: #F5F3ED;
         width: 341px;
