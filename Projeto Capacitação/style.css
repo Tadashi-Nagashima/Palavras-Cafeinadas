@@ -291,11 +291,6 @@ mark{
     transition: transform 0.5s ease-in-out;
 }
 
-.carrossel.active {
-    display: block;
-    transform: translateX(0);
-}
-
 #botaoNext{
     color: white;
     width: 16.55px;
@@ -642,8 +637,7 @@ footer{
     }
     
     .formato-carrossel{
-        width: 217px;
-        /* display: none; */
+        width: 316.45px;
     }
     
     .ul-carrossel{
@@ -652,38 +646,45 @@ footer{
     
     .ulCarrosselMobile{
         display: flex;
-        gap: 10px;
+        justify-content: center;
+        justify-items: center;
     }
-
+    
     .ulCarrosselMobile .carrossel{
         user-select: none;
-        background-color: rgb(255, 255, 255);
+        background-color: #F5F3ED;
+        width: 217px;
+        height: 287px;
         border-radius: 8px;
         padding: 1rem;
         margin-bottom: 32px;
         text-decoration: none;
-        width: 217px;
-        height: 287px;
-        margin-bottom: 32px;
     }
     
     .ulCarrosselMobile .link-carrossel .tituloCarrossel{
+        font-family: "Open Sans", sans-serif;
+        color: black;
+        font-size: 15px;
+        font-weight: 700;
+        font-style: normal;
         line-height: 27px;
-    }
-    
+        text-transform: capitalize;
+    }   
     
     .ulCarrosselMobile .link-carrossel .textoCarrossel{
-        margin-top: -5px;
         color: black;
-        height: 55px;
         font-size: 13px;
+        width: 197px;
+        height: 55px;
     }
     
-    .ulCarrosselMobile .link-carrossel .imgCarrossel {
+    .link-carrossel .imgCarrossel {
+        align-items: center;
         width: 197.5px;
-        height: 170.77px;
+        height: 175.77px;
+        border-radius: 8px;
+        object-fit: cover;
     }
-    
     #botaoNext{
         width: 13.45px;
         height: 26px;
