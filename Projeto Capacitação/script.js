@@ -46,7 +46,7 @@ botaoNext.addEventListener('click', () =>{
     if (indice > 3){
       indice = 0;
     }
-    
+
     let aux = itens_cafeteria[indice].img;
     itens_cafeteria[indice].img = itens_cafeteria[i].img;
     itens_cafeteria[i].img = aux;
@@ -59,9 +59,6 @@ botaoNext.addEventListener('click', () =>{
     itens_cafeteria[indice].texto = itens_cafeteria[i].texto;
     itens_cafeteria[i].texto = aux;
   }
-
-  console.log(titulo)
-  console.log(itens_cafeteria)
 })
 
 botaoPrev.addEventListener('click', () =>{
