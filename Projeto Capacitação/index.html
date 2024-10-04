@@ -8,7 +8,7 @@
 </head>
     <body>
         <header>
-            <nav> 
+            <nav>
                 <ul class="navItens">
                     <l1><a href="#sobre-nos">Sobre nós</a><hr class="navItensSub"></l1>
                     <l1><a href="#cafeteria">Cafeteria</a><hr class="navItensSub"></l1>
@@ -24,11 +24,27 @@
                         <img class="navImg" src="assets/coffee_shop_logo-removebg-preview_1-removebg-preview.png" alt="">
                     </li>
                     <li class="navImgTitle">Palavras Cafeinadas</li>
-                    <li>
+
+                    <div id="buttonAbrir">
                         <img src="assets/Line 8.png" alt="">
                         <p></p>
-                        <img style="margin-bottom: 6px;"src="assets/Line 9.png" alt="">
-                    </li>
+                        <img style="margin-bottom: 6px;"src="assets/Line 9.png" alt=""> 
+                    </div>
+                    
+                    <div class="menuMobile" id="menu-mobile">
+                        <div class="buttonFechar">
+                            <img src="assets/Vector 8.png" alt="">
+                        </div>
+                        <nav>
+                            <ul>
+                                <l1><a href="#">Home</a></l1>
+                                <l1><a href="#sobre-nos">Sobre Nós</a></l1>
+                                <l1><a href="#cafeteria">Cafeteria</a></l1>
+                                <l1><a href="#">Contato</a></l1>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="overlayMenu" id="overlay-menu"></div>
                 </ul>
             </nav>
         </header>
@@ -109,19 +125,6 @@
                                 </a>
                             </li>
                         </ul> 
-                        <ul class="ulCarrosselMobile">
-                            <li class="carrossel" data-index="0">
-                                <a class="link-carrossel">
-                                    <img class="imgCarrossel" src="assets/Brigadeiro 1.jpg" alt=""> 
-                                    <h2 class="tituloCarrossel">
-                                        Brigadeiro De Capuccino
-                                    </h2>
-                                    <p class="textoCarrossel">
-                                        O brigadeiro de capuccino combina o doce tradicional com um toque suave...
-                                    </p>
-                                </a>
-                            </li>  
-                        </ul>
                     </div>
                     <img id="botaoNext" src="assets/Flecha anterior.png">
                 </div>      

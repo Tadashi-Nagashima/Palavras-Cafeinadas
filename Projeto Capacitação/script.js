@@ -94,3 +94,21 @@ botaoPrev.addEventListener('click', () =>{
     itens_cafeteria[i].texto = aux;
   }
 })
+
+let button_menu = document.getElementById("buttonAbrir")
+let menu = document.getElementById("menu-mobile")
+let overlay = document.getElementById("overlay-menu")
+
+button_menu.addEventListener('click', () =>{
+  menu.classList.add("abrirMenu")
+})
+
+menu.addEventListener('click', () =>{
+  menu.classList.remove("abrirMenu")
+
+})
+
+overlay.addEventListener('click', () =>{
+  menu.classList.remove("abrirMenu")
+
+})
