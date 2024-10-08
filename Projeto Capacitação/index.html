@@ -12,8 +12,10 @@
                 <l1><a href="#sobre-nos">Sobre nós</a><hr class="navItensSub"></l1>
                 <l1><a href="#cafeteria">Cafeteria</a><hr class="navItensSub"></l1>
                 <div>
-                    <img class="navImg" src="assets/coffee_shop_logo-removebg-preview_1-removebg-preview.png" alt="">
-                    <p class="navImgTitle">Palavras Cafeinadas</p>
+                    <a href="#">
+                        <img class="navImg" src="assets/coffee_shop_logo-removebg-preview_1-removebg-preview.png" alt="">
+                        <p class="navImgTitle">Palavras Cafeinadas</p>
+                    </a>
                 </div>
                 <l1><a href="#contato">Contato</a><hr class="navItensSub"></l1>
                 <l1><img class= "icon" src="assets/images.png" alt="">19-991256972</l1>
@@ -36,20 +38,29 @@
             <div class="menuMobile" id="menu-mobile">
                 <header>
                     <ul class="navItensMobile">
-                        <img class="navImg" src="assets/coffee_shop_logo-removebg-preview_1-removebg-preview.png" alt="">
+                        <img class="navImg" style="margin-left: 0;" src="assets/coffee_shop_logo-removebg-preview_1-removebg-preview.png" alt="">
                         <div class="buttonFechar">
                             <img src="assets/Vector 8.png" alt="">
                         </div>
                     </ul>  
                 </header>
                 
-
                 <nav class="itensMenu">
                     <ul>
-                        <l1><a href="#">Home</a></l1>
-                        <l1><a href="#sobre-nos">Sobre Nós</a></l1>
-                        <l1><a href="#cafeteria">Cafeteria</a></l1>
-                        <l1><a href="#">Contato</a></l1>
+                        <l1>
+                            <div class="itensMenuBackground">
+                                <a class="itensMenu" href="">Home</a>
+                            </div>
+                        </l1>
+                        <l1>
+                            <div class="itensMenuBackground"><a class="itensMenu" href="#sobre-nos">Sobre Nós</a></div>
+                        </l1>
+                        <l1>
+                            <div class="itensMenuBackground"><a class="itensMenu" href="#cafeteria">Cafeteria</a></div>
+                        </l1>
+                        <l1>
+                            <div class="itensMenuBackground"><a class="itensMenu" href="#contato">Contato</a></div>
+                        </l1>
                     </ul>
                 </nav>
             </div>
@@ -66,11 +77,12 @@
                 <button class="buttonVC">
                     <p>VENHA CONHECER</p>
                     <strong>
-                        <img class= "seta" src="assets/east_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="">
+                        <img  class= "seta" src="assets/east_40dp_E8EAED_FILL0_wght400_GRAD0_opsz40.png" alt="">
                     </strong>
                 </button>
+                <div id="sobre-nos"></div>
             </div>
-            <section id="sobre-nos">
+            <section>
                 <h2>
                     <mark>Sobre nós</mark>
                 </h2>
@@ -134,9 +146,10 @@
                         </ul> 
                     </div>
                     <img id="botaoNext" src="assets/Flecha anterior.png">
-                </div>      
+                </div>
+                <div id="contato"></div>
             </section>
-            <section id="contato">
+            <section>
                 <div>
                     <h2 class="h2">
                         <mark>Entre em contato</mark>
