@@ -63,6 +63,12 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    transition: .1s;
+}
+
+.navItens:hover{
+    font-size: 19px;
+    transition: .1s;
 }
 
 .navItensSub{
@@ -79,6 +85,11 @@ header{
 
     margin: auto;
     display: flex;
+}
+
+.navItens:hover .navImg{
+    width: 46px;
+    height: 57.86px;
 }
 
 .navImgTitle{
@@ -107,6 +118,12 @@ h1{
     width:  589px;
     height: 228px;
     margin-left: 119px;
+    transition: .4s;
+}
+
+h1:hover{
+    font-size: 56.5px;
+    transition: .4s;
 }
 
 #h2{
@@ -118,6 +135,12 @@ h1{
     margin-left: 119px;
     margin-top: 10px;
     margin-bottom: 30px;
+    transition: .4s;
+}
+
+#h2:hover{
+    font-size: 24.8px;
+    transition: .4s;
 }
 
 .buttonVC{
@@ -136,6 +159,15 @@ h1{
     display: flex;
     align-items: center;
     margin-left: 119px;
+    transition: .2s;
+
+}
+
+.buttonVC:hover{
+    width: 286px;
+    height: 60px;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.26);
+    transition: .1s;
 }
 
 .button{
@@ -153,6 +185,14 @@ h1{
     
     display: flex;
     align-items: center;
+    transition: .2s;
+}
+
+.button:hover{
+    width: 286px;
+    height: 60px;
+    box-shadow: 0 5px 5px rgba(255, 255, 255, 0.26);
+    transition: .1s;
 }
 
 .seta{
@@ -160,6 +200,15 @@ h1{
     height: 13px;
     margin-top: center;
     margin-left: -30px;
+}
+
+figure{
+    transition: .2s;
+}
+
+figure:hover{
+    transform: scale(1.03);
+    transition: .2s;
 }
 
 section h2{
@@ -205,7 +254,14 @@ mark{
     height: auto;
     font-weight: 400;
     font-size: 18px;
+    transition: .4s;
 }
+
+.textoSobre:hover{
+    font-size: 18.5px;
+    transition: .4s;
+}
+
 
 #img_cafes{
     width: 352px; 
@@ -238,6 +294,10 @@ mark{
     text-decoration-color: #B2784A;
     text-decoration-thickness: 3px;
     text-underline-offset: 10px;
+
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 25%;
 }
 
 .formato-carrossel{
@@ -249,10 +309,25 @@ mark{
     margin-top: 45px;
 }
 
+@keyframes reveal {
+    from {
+      opacity: 0;
+      clip-path: inset(0% 0% 45% 0%);
+    }
+  
+    to {
+      opacity: 1;
+      clip-path: inset(0% 0% 0% 0%);
+    }
+  }
+
 .ul-carrossel{
     display: flex;
     flex-direction: row;
     gap: 10px;
+    animation: reveal 1ms ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
 }
 
 .ul-carrossel .carrossel{
@@ -264,6 +339,13 @@ mark{
     padding: 1rem;
     margin-bottom: 32px;
     text-decoration: none;
+    transition: .3s;
+}
+
+.ul-carrossel .carrossel:hover{
+    width: 355px;
+    height: 410px;
+    transition: .3s;
 }
 
 .ul-carrossel .link-carrossel .tituloCarrossel{
@@ -274,21 +356,35 @@ mark{
     font-style: normal;
     line-height: 18px;
     text-transform: capitalize;
+    transition: .3s;
 }
 
+.ul-carrossel .carrossel:hover .tituloCarrossel{
+    font-size: 17px;
+    transition: .3s;
+}
 
 .ul-carrossel .link-carrossel .textoCarrossel{
     margin-top: 5px;
     color: black;
 }
 
+.ul-carrossel .link-carrossel .textoCarrossel:hover{
+    font-size: 17px;
+    transition: .3s;
+}
+
 .link-carrossel .imgCarrossel {
     width: 314px;
     height: 277px;
     object-fit: cover;
+    transition: .3s;
 }
-.carrossel {
-    transition: transform 0.5s ease-in-out;
+
+.ul-carrossel .carrossel:hover .link-carrossel .imgCarrossel{
+    width: 324px;
+    height: 287px;
+    transition: .3s;
 }
 
 #botaoNext{
@@ -297,6 +393,13 @@ mark{
     height: 32px;
     transform: rotate(180deg);
     margin-left: 50px;
+    transition: .1s;
+}
+
+#botaoNext:hover{
+    width: 18.55px;
+    height: 34px;
+    transition: .1s;
 }
 
 #botaoPrev{
@@ -304,6 +407,13 @@ mark{
     width: 16.55px;
     height: 32px;
     margin-right: 50px;
+    transition: .1s;
+}
+
+#botaoPrev:hover{
+    width: 18.55px;
+    height: 34px;
+    transition: .1s;
 }
 
 .backgroundContato{
@@ -393,7 +503,7 @@ mark{
     margin-top: 10px;
 }
 
-h3{
+label{
     font-family: "Open Sans", sans-serif;
     color: #1F0C00;
     font-weight: 700;
@@ -411,7 +521,7 @@ h3{
     border-width: 1px;
 }
 
-#input-mensagem{
+.input-mensagem{
     width: 609px;
     height: 254px;
     border-color: #8F542E;
@@ -480,6 +590,7 @@ footer{
     
     main{
         width: 100%;
+        overflow-x: hidden;
     }
     
     header{
@@ -487,6 +598,7 @@ footer{
         height: 64px;
         padding-right: 40px;
         padding-left: 20px;
+        position: fixed;
     }
    
     .navItens{
@@ -525,39 +637,63 @@ footer{
         left: 0;
         z-index: 999999;
         margin-top: 64px;
+        transition: 1s;
+    }
+
+    #buttonAbrir:hover{
+        transform: scale(1.1);
+        transition: .1s;
+    }
+
+    .navMenu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .itensMenu{
-        font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 42px;
-        color: #1F0C00;
-        width: 73px;
-        height: 42px;
-        line-height: 75px;
-        margin-left: 18px;
+        margin-left: 18px; 
+        align-content: center;
+        color: #000000;
     }
 
     .itensMenuBackground{
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         width: 342px;
         height: 78px;
+        border: none;
         border-radius: 8px;
         margin-top: 25px;
         justify-content: center;
         border-radius: 8px;
         box-shadow: 0 10px 10px #1F0C0033;
+
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 75px;
+        align-content: center;
+        transition: .1s;
+    }
+
+    .itensMenuBackground:hover{
+        width: 352px;
+        height: 88px;
+        font-size: 25px;
+        transition: .1s;
     }
 
     .menuMobile.abrirMenu{
         width: 100%;
         height: 496px;
         display: block;
+        transition: .1s;
     }
 
     .menuMobile.abrirMenu ~ .overlayMenu{
         display: block;
+        transition: .1s;
     }
 
     .overlayMenu{
@@ -569,10 +705,17 @@ footer{
         left: 0;
         z-index: 888888;
         display: none;
+        transition: .1s;
     }
 
     .buttonFechar{
         margin-bottom: -10px;
+        transition: .1s;
+    }
+
+    .buttonFechar:hover{
+        transform: scale(1.2);
+        transition: .1s;
     }
 
     section h2{
@@ -593,8 +736,14 @@ footer{
     h1{
         font-size: 28px;
         width: 342px;
-        height: 96px;
+        height: auto;
         margin-left: 28px;
+        transition: .4s;
+    }
+
+    h1:hover{
+        font-size: 28.5px;
+        transition: .4s;
     }
     
     #h2{
@@ -608,7 +757,14 @@ footer{
         font-size: 14px;
 
         padding-left: 10px;
-    }   
+        transition: .1s;
+    }
+
+    .button:hover{
+        width: 219px;
+        height: 46px;
+        transition: .1s;
+    }
     
     .buttonVC{
         width: 217px;
@@ -620,6 +776,13 @@ footer{
         margin-top: 35px;
 
         padding-left: 10px;
+        transition: .1s;
+    }
+
+    .buttonVC:hover{
+        width: 219px;
+        height: 46px;
+        transition: .1s;
     }
 
     .seta{
@@ -698,7 +861,7 @@ footer{
         justify-content: center;
         justify-items: center;
     }
-    
+
     .ul-carrossel .carrossel{
         user-select: none;
         background-color: #F5F3ED;
@@ -709,6 +872,12 @@ footer{
         margin-bottom: 32px;
         text-decoration: none;
     }
+
+    .ul-carrossel .carrossel:hover{
+        width: 227px;
+        height: 297px;
+        transition: .1s;
+    }
     
     .ul-carrossel .link-carrossel .tituloCarrossel{
         font-family: "Open Sans", sans-serif;
@@ -718,13 +887,26 @@ footer{
         font-style: normal;
         line-height: 27px;
         text-transform: capitalize;
-    }   
+        transition: .1s;
+    }
+
+    .ul-carrossel .carrossel:hover .tituloCarrossel{
+        font-size: 15px;
+        transition: .1s;
+    }
     
     .ul-carrossel .link-carrossel .textoCarrossel{
         color: black;
         font-size: 13px;
         width: 197px;
         height: 55px;
+        margin-top: -2px;
+        transition: .1s;
+    }
+
+    .ul-carrossel .link-carrossel .textoCarrossel:hover{
+        font-size: 13px;
+        transition: .1s;
     }
     
     .link-carrossel .imgCarrossel {
@@ -733,17 +915,39 @@ footer{
         height: 165.77px;
         border-radius: 8px;
         object-fit: cover;
+        transition: .1s;
     }
+
+    .ul-carrossel .carrossel:hover .link-carrossel .imgCarrossel{
+        width: 197.5px;
+        height: 175.77px;
+        transition: .1s;
+    }
+
     #botaoNext{
         width: 13.45px;
         height: 26px;
         margin-left: 40px;
+        transition: .1s;
+    }
+
+    #botaoNext:hover{
+        width: 15.45px;
+        height: 28px;
+        transition: .1s;
     }
     
     #botaoPrev{
         width: 13.45px;
         height: 26px;
         margin-right: 40px;
+        transition: .1s;
+    }
+
+    #botaoPrev:hover{
+        width: 15.45px;
+        height: 28px;
+        transition: .1s;
     }
 
     #contato-texto{
@@ -760,7 +964,7 @@ footer{
         margin-bottom: 50px;
     }
 
-    h3{
+    label{
         width: 112px;
         height: 30px;
         font-size: 20px;
@@ -776,7 +980,7 @@ footer{
         margin-left: -85px;
     }
     
-    #input-mensagem{
+    .input-mensagem{
         width: 293px;
         height: 160px;
         margin-top: 45px;
@@ -835,6 +1039,13 @@ footer{
         margin-left: 10px;
         margin-right: 10px;
         justify-content: space-evenly;
+        transition: .2s;
+    }
+
+    .iconContatoMobile:hover{
+        width: 54px;
+        height: 54px;
+        transition: .2s;
     }
 
     footer{
