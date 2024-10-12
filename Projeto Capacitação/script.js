@@ -17,7 +17,7 @@ let itens_cafeteria = [
   {
     titulo: "Sorvete de Café",
     texto: "O sorvete em versão de café pode ser aproveitado sozinho ou com um pedacinho de bolo no fim...",
-    img: "assets/sorvete cafe 1.jpg"
+    img: "assets/sorvete cafe 1.jpg",
   }
 ];
 
@@ -111,4 +111,20 @@ menu.addEventListener('click', () =>{
 overlay.addEventListener('click', () =>{
   menu.classList.remove("abrirMenu")
 
+})
+
+let mensagem = [
+  {
+    nome,
+    email,
+    texto
+  }
+]
+
+botaoenviarmensagem.addEventListener('click', () =>{
+  mensagem[0].nome = document.getElementsByClassName("input-nome-email"); 
+  mensagem[0].emai = document.getElementsByClassName("input-nome-email") ;
+  mensagem[0].texto = document.getElementsByClassName("input-mensagem");
+
+  console.log(document.getElementsByClassName("input-nome-email"));
 })
