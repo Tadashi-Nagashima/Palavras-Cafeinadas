@@ -519,6 +519,7 @@ label{
     border-color: #8F542E;
     border-radius: 8px;
     border-width: 1px;
+    resize: none;
 }
 
 .input-mensagem{
@@ -527,6 +528,7 @@ label{
     border-color: #8F542E;
     border-radius: 8px;
     border-width: 1px;
+    resize: none
 }
 
 #enviar-mensagem{
